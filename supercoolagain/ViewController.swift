@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var bg: UIImageView!
+    @IBOutlet weak var boomapp: UIImageView!
+    @IBOutlet weak var button: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func makemenotsouncool(sender: AnyObject) {
+        boomapp.hidden = false
+        bg.hidden = false
+        button.hidden = true
+    }
 
 }
 
